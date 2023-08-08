@@ -1,14 +1,3 @@
-from flask import Flask
-app = Flask(__name__)
-
-@app.route('/')
-def hello_world():
-    return 'GreyMatters'
-
-
-if __name__ == "__main__":
-    app.run()
-    
 import os, logging, asyncio
 from telethon import Button
 from telethon import TelegramClient, events
